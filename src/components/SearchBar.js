@@ -26,6 +26,7 @@ const SearchBarContainer = styled(View)`
   flex-direction: row;
   justify-content: flex-start;
   height: 50px;
+  margin-bottom: 20px;
   margin-top: 15px;
   width: 90%;
 `;

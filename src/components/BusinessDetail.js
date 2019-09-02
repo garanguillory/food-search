@@ -18,8 +18,9 @@ const BusinessDetailContainer = styled(View)`
 
 const BusinessImage = styled(Image)`
   border-radius: 5px;
-  height: 100px;
-  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+  width: 200px;
 `;
 
 const BusinessName = styled(Text)`
