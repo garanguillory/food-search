@@ -1,13 +1,14 @@
 import React from 'react';
 import { View, Image, Text } from 'react-native';
 import styled from 'styled-components';
+import { AntDesign } from '@expo/vector-icons';
 
 const BusinessDetail = ({ business }) => {
   return (
     <BusinessDetailContainer>
       <BusinessImage source={{ uri: business.image_url }}/>
       <BusinessName>{business.name}</BusinessName>
-      <BusinessReviews>{business.rating} Stars, {business.review_count} Reviews</BusinessReviews>
+      <BusinessReviews>{business.rating} <Star name="star"/>'s, {business.review_count} Reviews</BusinessReviews>
     </BusinessDetailContainer>
   );
 };
@@ -29,6 +30,10 @@ const BusinessName = styled(Text)`
 `;
 
 const BusinessReviews = styled(Text)`
+  font-size: 14px;
+`;
+
+const Star = styled(AntDesign)`
   font-size: 14px;
 `;
 
